@@ -1,31 +1,12 @@
-import behavioral.strategypattern.AdditionConcreteStrategy;
-import behavioral.strategypattern.CalculatorContext;
-import behavioral.strategypattern.MultiplicationConcreteStrategy;
-import behavioral.strategypattern.SubtractionConcreteStrategy;
+import creational.CreationalPatterns;
 
 public class PatternsMain {
 
     public static void main(String[] subhani) {
 
-        System.out.println("----------------------------StrategyPattern----------------------------");
-        strategyPattern();
+        System.out.println("====================Creational Pattern====================");
 
-
-    }
-
-    public static void strategyPattern() {
-        CalculatorContext calculatorContext = new CalculatorContext();
-
-        AdditionConcreteStrategy additionConcreteStrategy = new AdditionConcreteStrategy();
-        calculatorContext.setOperationStrategy(additionConcreteStrategy);
-        System.out.println("Addition strategy:" + calculatorContext.executeStrategy(1, 2));
-
-        SubtractionConcreteStrategy subtractionConcreteStrategy = new SubtractionConcreteStrategy();
-        calculatorContext.setOperationStrategy(subtractionConcreteStrategy);
-        System.out.println("Subtraction strategy:" + calculatorContext.executeStrategy(1, 2));
-
-        MultiplicationConcreteStrategy multiplicationConcreteStrategy = new MultiplicationConcreteStrategy();
-        calculatorContext.setOperationStrategy(multiplicationConcreteStrategy);
-        System.out.println("Multiplication strategy:" + calculatorContext.executeStrategy(2, 3));
+        CreationalPatterns creationalPatterns = new CreationalPatterns();
+        creationalPatterns.patterns();
     }
 }

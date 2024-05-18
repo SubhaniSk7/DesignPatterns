@@ -1,6 +1,11 @@
 package creational;
 
-import creational.abstractfactory.*;
+import creational.abstractfactory.AbstractFurnitureFactory;
+import creational.abstractfactory.Chair;
+import creational.abstractfactory.FurnitureFactory;
+import creational.abstractfactory.ModernStyleFurnitureFactory;
+import creational.abstractfactory.OldStyleFurnitureFactory;
+import creational.abstractfactory.Sofa;
 import creational.builder.BuilderPatternMain;
 import creational.factory.Shape;
 import creational.factory.ShapeFactory;
@@ -21,11 +26,13 @@ public class CreationalPatterns {
         //
         SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
         singletonEnum.print();
+        System.out.println();
 
         // Builder pattern
         System.out.println("-------------Builder pattern-------------");
         BuilderPatternMain builderPatternMain = new BuilderPatternMain();
         builderPatternMain.print();
+        System.out.println();
 
         // Factory pattern
         // Here one factory class only creates objects related to one type, without specifying their concrete classes.
@@ -36,6 +43,7 @@ public class CreationalPatterns {
 
         shape = shapeFactory.getShape("Circle");
         shape.print();
+        System.out.println();
 
         // Abstract Factory pattern
         // Here one factory class creates objects related to a family of related or dependent classes,
@@ -61,6 +69,7 @@ public class CreationalPatterns {
         sofa = furnitureFactory.createSofa();
         chair.chairType();
         sofa.sofaType();
+        System.out.println();
 
         // Prototype pattern
         System.out.println("-------------Prototype pattern-------------");
@@ -72,6 +81,7 @@ public class CreationalPatterns {
 
         TechnologyCollege anotherTechnologyCollege = (TechnologyCollege) technologyCollege.cloneObject();
         anotherTechnologyCollege.print();
+        System.out.println();
 
         // Object Pool pattern
         System.out.println("-------------Object Pool pattern-------------");

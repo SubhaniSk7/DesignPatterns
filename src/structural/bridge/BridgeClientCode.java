@@ -9,6 +9,5 @@ public class BridgeClientCode {
         color = new BlueColor();
         shape = new Circle(color);
         shape.draw();
-
     }
 }

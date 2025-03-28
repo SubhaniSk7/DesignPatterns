@@ -5,8 +5,8 @@ import java.util.List;
 
 public class ConnectionPool {
     private static volatile ConnectionPool instance;
-    private int poolSize = 2;
-    private List<DBConnection> pool;
+    private final int poolSize = 2;
+    private final List<DBConnection> pool;
 
     private ConnectionPool() {
         pool = new ArrayList<>();

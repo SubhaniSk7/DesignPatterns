@@ -2,12 +2,12 @@ package creational.singleton;
 
 public class SingletonClass {
     // for normal/lazy/synchronized initialization
-//    public static SingletonClass instance;
+//    private static SingletonClass instance;
 
     // For Threadsafe(Double checking 2p locking)  initialization
     // used volatile keyword to prevent Cache incoherence issues i.e., making instance immediately visible to other threads.
     // this prevents returning stale instances to other threads.
-    public static volatile SingletonClass instance;
+    private static volatile SingletonClass instance;
 
     private SingletonClass() {
     }

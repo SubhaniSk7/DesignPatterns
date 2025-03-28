@@ -11,6 +11,8 @@ import structural.decorator.example2.UpperCaseDecorator;
 
 public class DecoratorClientCode {
     public void execute() {
+        
+        // Decorator pattern example: 1
         Coffee coffee = new NormalCoffee();
         System.out.println(coffee.getDescription() + " Cost:" + coffee.cost());
 
@@ -20,6 +22,7 @@ public class DecoratorClientCode {
         coffee = new SugarCoffee(coffee);
         System.out.println(coffee.getDescription() + " Cost:" + coffee.cost());
 
+        // Decorator pattern example: 2
         DataSource fileDataSource = new FileDataSource("Text.txt");
         String data = "SuBhAnI";
         fileDataSource.writeData(data);

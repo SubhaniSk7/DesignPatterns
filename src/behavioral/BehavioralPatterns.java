@@ -14,6 +14,18 @@ import behavioral.visitor.ClientCodeVisitorPattern;
 
 public class BehavioralPatterns {
     public void patterns() {
+        // Strategy pattern
+        System.out.println("-------------Strategy pattern-------------");
+        ClientCodeStrategyPattern clientCodeStrategyPattern = new ClientCodeStrategyPattern();
+        clientCodeStrategyPattern.execute();
+        System.out.println();
+
+        // Observer pattern
+        System.out.println("-------------Observer pattern-------------");
+        ClientCodeObserverPattern clientCodeObserverPattern = new ClientCodeObserverPattern();
+        clientCodeObserverPattern.execute();
+        System.out.println();
+
         // Chain of Responsibility pattern
         System.out.println("-------------Chain of Responsibility pattern-------------");
         ClientCodeChainOfResponsibility clientCodeChainOfResponsibility = new ClientCodeChainOfResponsibility();
@@ -44,22 +56,10 @@ public class BehavioralPatterns {
         clientCodeMementoPattern.execute();
         System.out.println();
 
-        // Observer pattern
-        System.out.println("-------------Observer pattern-------------");
-        ClientCodeObserverPattern clientCodeObserverPattern = new ClientCodeObserverPattern();
-        clientCodeObserverPattern.execute();
-        System.out.println();
-
         // State pattern
         System.out.println("-------------State pattern-------------");
         ClientCodeStatePattern clientCodeStatePattern = new ClientCodeStatePattern();
         clientCodeStatePattern.execute();
-        System.out.println();
-
-        // Strategy pattern
-        System.out.println("-------------Strategy pattern-------------");
-        ClientCodeStrategyPattern clientCodeStrategyPattern = new ClientCodeStrategyPattern();
-        clientCodeStrategyPattern.execute();
         System.out.println();
 
         // Template Method pattern
@@ -78,6 +78,5 @@ public class BehavioralPatterns {
         System.out.println("-------------Interpreter pattern-------------");
         ClientCodeInterpreterPattern clientCodeInterpreterPattern = new ClientCodeInterpreterPattern();
         clientCodeInterpreterPattern.execute();
-
     }
 }

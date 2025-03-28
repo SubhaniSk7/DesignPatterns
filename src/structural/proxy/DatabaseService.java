@@ -1,6 +1,7 @@
 package structural.proxy;
 
-public class DatabaseService {
+// Implements Database. It is in 3rd party system.
+public class DatabaseService implements Database {
 
     private final String tableName;
 

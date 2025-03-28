@@ -8,6 +8,7 @@ import creational.abstractfactory.OldStyleFurnitureFactory;
 import creational.abstractfactory.Sofa;
 import creational.builder.BuilderPatternMain;
 import creational.factory.Shape;
+import creational.factory.Shape1;
 import creational.factory.ShapeFactory;
 import creational.objectpool.ConnectionPool;
 import creational.objectpool.DBConnection;
@@ -43,6 +44,11 @@ public class CreationalPatterns {
 
         shape = shapeFactory.getShape("Circle");
         shape.print();
+        System.out.println();
+
+        Shape1 shape1 = Shape1.of("Rectangle");
+        shape1.print();
+
         System.out.println();
 
         // Abstract Factory pattern

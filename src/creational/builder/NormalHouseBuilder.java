@@ -2,7 +2,7 @@ package creational.builder;
 
 public class NormalHouseBuilder implements HouseBuilder {
 
-    private House house;
+    private final House house;
 
     public NormalHouseBuilder() {
         this.house = new House();
@@ -27,5 +27,4 @@ public class NormalHouseBuilder implements HouseBuilder {
     public House getHouse() {
         return this.house;
     }
-
 }
